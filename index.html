@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PizzaMix - A mais luxuosa da região</title>
+  <meta name="title" content="PizzaMix - A mais luxuosa da região">
+  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    PreLoad
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    Carregar PreLoad
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">PizzaMix</p>
+  </div>
+
+
+  <!-- 
+    Barra de Contato 
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          PizzaMix, R. Retiro Jundiaí-SP, 3000
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Segunda à Sexta das 18:00h às 23:00h</span>
+      </div>
+
+      <a href="tel:+5511943349060" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">(11) 94334-9060</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:contato@pizzamix.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">contato@pizzamix.com</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- 
+    Header
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="PizzaMix">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="PizzaMix">
+        </a>
+
+        <ul class="navbar-list">
+
+          <!-- Home -->
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <!-- Cardapio -->
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Cardápio</span>
+            </a>
+          </li>
+
+          <!-- Sobre Nós -->
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Sobre Nós</span>
+            </a>
+          </li>
+
+          <!-- Reservas -->
+          <li class="navbar-item">
+            <a href="#reservas" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Reservas</span>
+            </a>
+          </li>
+
+          <!-- Contato -->
+          <li class="navbar-item">
+            <a href="#contato" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contato</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#reservas" class="btn btn-secondary">
+        <span class="text text-1">Reservar uma Mesa</span>
+
+        <span class="text text-2" aria-hidden="true">Reservar uma Mesa</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        Hero Slides
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Tradicional e Higienico</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Experimente <br>
+              o verdadeiro sabor de Pizza
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venha com sua família provar as melhores pizzas da região
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Conheça nosso Cardápio</span>
+
+              <span class="text text-2" aria-hidden="true">Conheça nosso Cardápio</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Expêriencia Única</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Ingredientes <br>
+              escolhidos para você
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Seu paladar nunca provou nada como isso
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Conheça nosso Cardápio</span>
+
+              <span class="text text-2" aria-hidden="true">Conheça nosso Cardápio</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Incrivel & Delicioso</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Faça sua reserva <br>
+              agora mesmo!
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ambiente fresco e luxuoso
+            </p>
+
+            <a href="#menu" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Conheça nosso Cardápio</span>
+
+              <span class="text text-2" aria-hidden="true">Conheça nosso Cardápio</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Sabores da Realeza</p>
+
+          <h2 class="headline-1 section-title">Oferecemos o mais alto nível</h2>
+
+          <p class="section-text">
+            Pizzas, Massas, Pratos e Drinks para todos os tipos de paladares. Se quiser algo único pode deixar com a gente.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Massas"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Massas</a>
+                  </h3>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">Ver cárdapio</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Pizzas"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Pizzas</a>
+                  </h3>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">Ver cárdapio</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="./assets/cardapio-completo-pizzaria.pdf" target="_blank" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Bebidas"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Bebidas</a>
+                  </h3>
+
+                  <a href="#menu" class="btn-text hover-underline label-2">Ver cárdapio</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - Sobre Nós
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Nossa História</p>
+
+            <h2 class="headline-1 section-title">Sobre Nós</h2>
+
+            <p class="section-text">
+              Somos uma Pizzaria e Restaurante de alto padrão. A PizzariaMix surgiu em 2024 com o propósito de 
+              inovar e trazer o verdadeiro sabor da gastronomia Italiana para Jundiaí e Região. Possuimos um ambiente aconchagante o suficiente
+              para acomodar nossos ingredientes de ponta e nossos eventos. Faça sua reserva e venha conhecer
+              
+            </p>
+
+            <div class="contact-label">Entre em Contato</div>
+
+            <a href="tel:+11943349060" class="body-1 contact-number hover-underline">(11) 94334-9060</a>
+<!-- 
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+-->
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <!-- <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div> -->
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Promoção Especial</p>
+
+            <h2 class="headline-1 section-title">Lobster Tortellini</h2>
+
+            <p class="section-text">
+              Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
+              industrys standard dummy text ever since the when an unknown printer took a galley of type.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">R$129,90</del>
+              
+              <span class="span body-1">R$89,90</span>
+            </div>
+
+            <a href="#menu" class="btn btn-primary">
+              <span class="text text-1">Ver Cárdapio</span>
+
+              <span class="text text-2" aria-hidden="true">Ver Cárdapio</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Os mais pedidos</p>
+
+          <h2 class="headline-1 section-title text-center">Os melhores do Cárdapio</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Greek Salad</a>
+                    </h3>
+
+                    <span class="badge label-1">Seasonal</span>
+
+                    <span class="span title-2">R$39,90</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Lasanha Bolonhesa</a>
+                    </h3>
+
+                    <span class="span title-2">R$109,00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetais, Queijos, Pedaços de Carne, Tomate seco e Diversos Temperos
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Butternut Pumpkin</a>
+                    </h3>
+
+                    <span class="span title-2">$10.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tokusen Wagyu</a>
+                    </h3>
+
+                    <span class="badge label-1">New</span>
+
+                    <span class="span title-2">$39.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Olivas Rellenas</a>
+                    </h3>
+
+                    <span class="span title-2">$25.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Opu Fish</a>
+                    </h3>
+
+                    <span class="span title-2">$49.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Preços especiais disponiveis à partir das <span class="span">19:00h</span> até as <span class="span">21:00h</span>
+          </p>
+
+          <a href="./assets/cardapio-completo-pizzaria.pdf" target=_blank class="btn btn-primary">
+            <span class="text text-1">Ver Cardápio Completo</span>
+
+            <span class="text text-2" aria-hidden="true">Ver Cardápio Completo</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Desde 2024 inovando a culinária Italiana.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="reservas">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="https://api.sheetmonkey.io/form/xd4rH45WDQYYA4E1x6dxj3" method="POST" class="form-left">
+
+              <h2 class="headline-1 text-center">Faça sua Reserva</h2>
+
+              <p class="form-text text-center">
+                Para fazer sua reserva, ligue <a href="tel:+5511913345050" class="link">(11) 94334-9060</a>
+                ou preencha o formulário abaixo
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Nome Completo" autocomplete="off" class="input-field">
+
+                <input type="email" name="email" placeholder="E-mail" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Pessoa</option>
+                    <option value="2-person">2 Pessoas</option>
+                    <option value="3-person">3 Pessoas</option>
+                    <option value="4-person">4 Pessoas</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">18 : 00 am</option>
+                    <option value="09:00am">19 : 00 am</option>
+                    <option value="010:00am">20 : 00 am</option>
+                    <option value="011:00am">21 : 00 am</option>
+                    <option value="012:00am">22 : 00 am</option>
+                    <option value="01:00pm">23 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea cols="30" rows="10" name="message" placeholder="Observação" autocomplete="off" class="input-field" required></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Reservar uma Mesa</span>
+
+                <span class="text text-2" aria-hidden="true">Reservar uma Mesa</span>
+              </button>
+
+              <!-- <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="Novo Contato!">
+              <input type="hidden" name="_honey" value="display:none"> -->
+
+
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Fale Conosco</h2>
+
+              <p class="contact-label">Reservar uma Mesa</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">(11) 94334-9060</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Endereço</p>
+
+              <address class="body-4">
+                PizzaMix, R. Retiro Jundiaí-SP, 3000
+              </address>
+
+              <p class="contact-label">Jantar</p>
+
+              <p class="body-4">
+                Segunda à Quinta <br>
+                das 18:00h às 22:00h
+              </p>
+
+              <p class="contact-label">Rodizio</p>
+
+              <p class="body-4">
+                Sexta e Sábado <br>
+                das 18:00h às 23:00h
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        Nossos Diferenciais
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Por quê nos escolher?</p>
+
+          <h2 class="headline-1 section-title">Nossos Diferenciais</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Comida Higienica</h3>
+
+                <p class="label-1 card-text">Ingredientes frescos e escolhidos à dedo.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Melhor Ambiente</h3>
+
+                <p class="label-1 card-text">Ambiente elegante que trás uma vibe top.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Melhores Chefes</h3>
+
+                <p class="label-1 card-text">Chefes renomados com certificações Michelin.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Fazemos Eventos</h3>
+
+                <p class="label-1 card-text">Faça sua festa com a gente.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+          Eventos
+      -->
+
+      <!-- <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Recent Updates</p>
+
+          <h2 class="section-title headline-1 text-center">Upcoming Event</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Food, Flavour</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Healthy Food</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Recipie</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Flavour so good you’ll try to eat with your eyes.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">View Our Blog</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Blog</span>
+          </a>
+
+        </div>
+      </section> -->
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')" id="contato">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="160" height="50" loading="lazy" alt="PizzaMix">
+          </a>
+
+          <address class="body-4">
+            PizzaMix, R. Retiro Jundiaí-SP, 3000
+          </address>
+
+          <a href="mailto:contato@pizzamix.com" class="body-4 contact-link">contato@pizzamix.com</a>
+
+          <a href="tel:+5511913345050" class="body-4 contact-link">Solicitar Reserva : (11) 94334-9060</a>
+
+          <p class="body-4">
+            Aberto das: 18:00h - 23:00h
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Fique por dentro dos eventos</p>
+
+          <p class="label-1">
+            Se inscreva e ganhe <span class="span">10% OFF</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Inscrever-se</span>
+
+              <span class="text text-2" aria-hidden="true">Inscrever-se</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Cardápio</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">Sobre Nós</a>
+          </li>
+
+          <li>
+            <a href="#reservas" class="label-2 footer-link hover-underline">Reservas</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Contato</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <img src="/instagram_icon.png" alt="">
+            <a href="#" class="label-2 footer-link hover-underline"></a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">X</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Maps</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 PizzaMix. Sobre licença MIT | Projeto Integrado V | <a href="https://github.com/xjfdzn"
+            target="_blank" class="link">Github</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    Voltar ao Topo
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
